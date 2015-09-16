@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="88">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>cDBN.cpp</itemPath>
+      <itemPath>cDBN.h</itemPath>
+      <itemPath>cRBLayer.cpp</itemPath>
+      <itemPath>cRBLayer.h</itemPath>
+      <itemPath>cTrainingSet.cpp</itemPath>
+      <itemPath>cTrainingSet.h</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../../../../Programs/EigenLib</pElem>
+            <pElem>../../../../Programs/boost_1_53_0</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../../../../Programs/boost_1_53_0/libs</pElem>
+          </linkerAddLib>
+        </linkerTool>
+      </compileType>
+      <item path="cDBN.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cDBN.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cRBLayer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cRBLayer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cTrainingSet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cTrainingSet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>../../../../Programs/eigen</pElem>
+            <pElem>../../../../Programs/boost_1_53_0</pElem>
+            <pElem>../../../../Projects/Shark/include</pElem>
+          </incDir>
+          <commandLine>-DEIGEN_NO_DEBUG</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../../../../Projects/Shark/lib</pElem>
+            <pElem>../../../../Programs/boost_1_53_0/libs</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>shark</linkerLibLibItem>
+          </linkerLibItems>
+          <commandLine>-lboost_serialization -lboost_system -lboost_filesystem -lboost_program_options -lshark</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="cDBN.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cDBN.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cRBLayer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cRBLayer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cTrainingSet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cTrainingSet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
